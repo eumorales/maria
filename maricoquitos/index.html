@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>❤</title>
+    <script>
+       onload = function () {
+            var d = document;
+            function feedin (feed, speed) {
+                var filter = 0;
+                feed.style.opacity = 0;
+                feed.style.MozOpacity = 0;
+                var timer = setInterval(function () {
+                    filter ++;
+                    feed.style.opacity = (filter / 10);
+                    feed.style.MozOpacity = (filter / 10);
+                    if (filter == 10) {
+                        clearInterval(timer);
+                    } 
+                },speed);
+            } 
+			
+			// Coração [58, 59, 61, 62, 93, 95, 97, 128, 132, 164, 166, 200] 
+            var str = [ 
+                [36,37,38,71,106,107,141,176,177,178], [40, 42,75, 77, 110, 112, 145,147,180,181,182], 
+				[186,151,116,81, 45, 46,47], [186,49, 51, 50,84,119, 120,154,190, 189, 191],
+				[54, 55, 56, 89, 91, 126, 125, 124, 196, 194, 161, 159], [204, 205,169,134,99,64,65,66,101,136,171,206],
+				[58,62,93, 94, 96, 97, 128, 129, 130, 131, 132, 163, 165, 167, 198, 202] 
+
+            ];
+            for (i=0;i<245;i++) {
+                var box = d.createElement('div');
+                with (d.body.appendChild(box).style) {
+                    if (i % 35 == 0) { clear = 'both'; }
+                    border = 'solid #222 1px';
+                    width = '20px';
+                    height = '20px';
+                    margin = '2px';
+                    float = 'left';
+                }   
+            }
+
+            var mess = d.getElementsByTagName('div');
+            var i = 0, j = 0;
+            setInterval(function () {
+                feedin(mess[str[i][j]], 25);
+                mess[str[i][j]].style.background = '#F39'
+                j++;
+                if (i == str.length) { clearInterval(timer); }
+                if (j == str[i].length) { i++; j = 0; }
+            }, 50);
+        } 
+    </script>
+	<p>Maricoquitos, te amo ❤</p>
+</head>
+<body>
+</body>
+</html>

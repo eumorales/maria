@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>???</title>
+    <style>
+        body {
+		
+			background-image: url("back.gif");
+            background-color: #ffffff;
+            text-align: center;
+            padding-top: 50px;
+			
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        button:hover {
+            background-color: #808080;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ffffff;">Você, maria vitória, me ama (Gilberto seu namorado)?</h1>
+    <button id="sim">Sim</button>
+    <button id="nao">Não</button>
+
+    <script>
+        var nao = document.getElementById("nao");
+        nao.addEventListener("click", function() {
+            var randomX = Math.floor(Math.random() * window.innerWidth / 1.5);
+            var randomY = Math.floor(Math.random() * window.innerHeight / 1.5);
+            nao.style.position = "absolute";
+            nao.style.top = randomY + "px";
+            nao.style.left = randomX + "px";
+        });
+
+        var sim = document.getElementById("sim");
+        sim.addEventListener("click", function() {
+            window.location.href = "https://www.youtube.com/shorts/ipaoBIRVFt0";
+        });
+    </script>
+</body>
+</html>
