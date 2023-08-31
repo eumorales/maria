@@ -7,16 +7,16 @@ document.addEventListener("DOMContentLoaded", function() {
         
         switch (selectedProgram) {
             case "moringa":
-                window.open('https://maria.gilbertomorales.com/carnemoringa', '_blank');
+                window.open('https://amores.gilbertomorales.com/carnemoringa', '_blank');
                 break;
             case "contador":
-                window.open('https://maria.gilbertomorales.com/coquitos', '_blank');
+                window.open('https://amores.gilbertomorales.com/coquitos', '_blank');
                 break;
             case "flappy":
-                window.open('https://maria.gilbertomorales.com/flappycoquitos', '_blank');
+                window.open('https://amores.gilbertomorales.com/flappycoquitos', '_blank');
                 break;
             case "maricoquitos":
-                window.open('https://maria.gilbertomorales.com/maricoquitos', '_blank');
+                window.open('https://amores.gilbertomorales.com/maricoquitos', '_blank');
                 break;
             default:
                 alert("Inválido.");
